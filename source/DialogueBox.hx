@@ -28,8 +28,10 @@ class DialogueBox extends FlxSpriteGroup
 
 	public var finishThing:Void->Void;
 
-	var portraitLeft:FlxSprite;
-	var portraitRight:FlxSprite;
+	var portraitBoyf:FlxSprite;
+	var portraitFilips1:FlxSprite;
+	var portraitFilips2:FlxSprite;
+	//var portraitFilips3:FlxSprite;
 
 	var handSelect:FlxSprite;
 	var bgFade:FlxSprite;
@@ -80,6 +82,39 @@ class DialogueBox extends FlxSpriteGroup
 				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
 				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
 				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
+//////////////////////////////////////////////////////////////////////////////////////////////////////////song 3 of week 1
+			case 'your-9-lives':
+				hasDialog = true;
+				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
+				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
+				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
+			case '-': //lol
+				hasDialog = true;
+				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
+				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
+				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////week2
+			/* yknow i should just make it default to doing this
+			case 'w2s1':
+				hasDialog = true;
+				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
+				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
+				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
+
+			case 'w2s2':
+				hasDialog = true;
+				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
+				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
+				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
+
+			case 'w2s3':
+				hasDialog = true;
+				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
+				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
+				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
+			*/
+
 			case 'roses':
 				hasDialog = true;
 				FlxG.sound.play(Paths.sound('ANGRY_TEXT_BOX'));
@@ -106,37 +141,46 @@ class DialogueBox extends FlxSpriteGroup
 		
 //////////////////////////////////////////////////////////////////
 /*
-	if (PlayState.SONG.song.toLowerCase() == 'sunshine' || PlayState.SONG.song.toLowerCase() == 'withered' || PlayState.SONG.song.toLowerCase() == 'run')
+	if (PlayState.SONG.song.toLowerCase() == 'this was a template i used cause i dont know how to code!!!! stolen from bob mod probably' || PlayState.SONG.song.toLowerCase() == 'a' || PlayState.SONG.song.toLowerCase() == 'a')
 		{
 			
 		}
  Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
 */
 //////////////////////////////////////////////////////////////////
-		portraitRight = new FlxSprite(0, 0);
-			portraitRight.frames = Paths.getSparrowAtlas('weeb/bfPortrait');
-			portraitRight.animation.addByPrefix('enter', 'Boyf', 24, false);
-			portraitRight.updateHitbox();
-			portraitRight.scrollFactor.set();
-			add(portraitRight);
-			portraitRight.visible = false;
+		portraitBoyf = new FlxSprite(0, 0);
+			portraitBoyf.frames = Paths.getSparrowAtlas('weeb/bfPortrait');
+			portraitBoyf.animation.addByPrefix('enter', 'Boyf', 24, false);
+			portraitBoyf.updateHitbox();
+			portraitBoyf.scrollFactor.set();
+			add(portraitBoyf);
+			portraitBoyf.visible = false;
 
 
-			portraitLeft = new FlxSprite(0, 0);
-			portraitLeft.frames = Paths.getSparrowAtlas('weeb/senpaiPortrait');
-			portraitLeft.animation.addByPrefix('enter', 'Filip', 24, false);
-			portraitLeft.updateHitbox();
-			portraitLeft.scrollFactor.set();
-			add(portraitLeft);
-			portraitLeft.visible = false;
+			portraitFilips1 = new FlxSprite(0, 0);
+			portraitFilips1.frames = Paths.getSparrowAtlas('weeb/filips1Portrait');
+			portraitFilips1.animation.addByPrefix('enter', 'Filip', 24, false);
+			portraitFilips1.updateHitbox();
+			portraitFilips1.scrollFactor.set();
+			add(portraitFilips1);
+			portraitFilips1.visible = false;
 		
+			portraitFilips2 = new FlxSprite(0, 0);
+			portraitFilips2.frames = Paths.getSparrowAtlas('weeb/filips2Portrait');
+			portraitFilips2.animation.addByPrefix('enter', 'Filip2', 24, false);
+			portraitFilips2.updateHitbox();
+			portraitFilips2.scrollFactor.set();
+			add(portraitFilips2);
+			portraitFilips2.visible = false;
+////////////////////////////////////////////////////////////////////////////////////////////////poretrits
 		box.animation.play('normalOpen');
 		box.setGraphicSize(Std.int(box.width * PlayState.daPixelZoom * 0.9));
 		box.updateHitbox();
 		add(box);
 
 		box.screenCenter(X);
-		portraitLeft.screenCenter(X);
+		portraitFilips1.screenCenter(X);
+		portraitFilips2.screenCenter(X);
 
 		handSelect = new FlxSprite(FlxG.width * 0.9, FlxG.height * 0.9).loadGraphic(Paths.image('weeb/pixelUI/hand_textbox'));
 		add(handSelect);
@@ -168,15 +212,15 @@ class DialogueBox extends FlxSpriteGroup
 
 	override function update(elapsed:Float)
 	{
-		// HARD CODING CUZ IM STUPDI
+		/* HARD CODING CUZ IM STUPDI
 		if (PlayState.SONG.song.toLowerCase() == 'roses')
 			portraitLeft.visible = false;
 		if (PlayState.SONG.song.toLowerCase() == 'thorns')
 		{
-			portraitLeft.color = FlxColor.BLACK;
+			portraitsex.color = FlxColor.BLACK;
 			swagDialogue.color = FlxColor.WHITE;
 			dropText.color = FlxColor.BLACK;
-		}
+		}*/
 
 		dropText.text = swagDialogue.text;
 
@@ -214,8 +258,9 @@ class DialogueBox extends FlxSpriteGroup
 					{
 						box.alpha -= 1 / 5;
 						bgFade.alpha -= 1 / 5 * 0.7;
-						portraitLeft.visible = false;
-						portraitRight.visible = false;
+						portraitFilips1.visible = false;
+						portraitFilips2.visible = false;
+						portraitBoyf.visible = false;
 						swagDialogue.alpha -= 1 / 5;
 						dropText.alpha = swagDialogue.alpha;
 					}, 5);
@@ -238,7 +283,7 @@ class DialogueBox extends FlxSpriteGroup
 	}
 
 	var isEnding:Bool = false;
-
+///////////////////////////////////////////////////////////////////////////////moretrits
 	function startDialogue():Void
 	{
 		cleanDialog();
@@ -252,19 +297,32 @@ class DialogueBox extends FlxSpriteGroup
 
 		switch (curCharacter)
 		{
-			case 'dad':
-				portraitRight.visible = false;
-				if (!portraitLeft.visible)
+			case 'fil1':
+				//portraitFilips1.visible = false;
+				portraitFilips2.visible = false;
+				portraitBoyf.visible = false;
+				if (!portraitFilips1.visible)
 				{
-					portraitLeft.visible = true;
-					portraitLeft.animation.play('enter');
+					portraitFilips1.visible = true;
+					portraitFilips1.animation.play('enter');
+				}
+			case 'fil2':
+				portraitFilips1.visible = false;
+				//portraitFilips2.visible = false;
+				portraitBoyf.visible = false;
+				if (!portraitFilips2.visible)
+				{
+					portraitFilips2.visible = true;
+					portraitFilips2.animation.play('enter');
 				}
 			case 'bf':
-				portraitLeft.visible = false;
-				if (!portraitRight.visible)
+				portraitFilips1.visible = false;
+				portraitFilips2.visible = false;
+				//portraitBoyf.visible = false;
+				if (!portraitBoyf.visible)
 				{
-					portraitRight.visible = true;
-					portraitRight.animation.play('enter');
+					portraitBoyf.visible = true;
+					portraitBoyf.animation.play('enter');
 				}
 		}
 	}

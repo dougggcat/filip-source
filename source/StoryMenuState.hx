@@ -24,15 +24,18 @@ class StoryMenuState extends MusicBeatState
 	var scoreText:FlxText;
 
 	var weekData:Array<Dynamic> = [
-		/*['Tutorial'],
-		['Bopeebo', 'Fresh', 'Dadbattle'],
+		/*['Tutorial'],*/
+		//['Bopeebo', 'Fresh', 'Dadbattle'],
+		/*
 		['Spookeez', 'South', "Monster"],
 		['Pico', 'Philly', "Blammed"],
 		['Satin-Panties', "High", "Milf"],
 		['Cocoa', 'Eggnog', 'Winter-Horrorland'],
 		['Senpai', 'Roses', 'Thorns']
 		*/
-		['Im-Going-for-a-Walk', 'Respect-Everybody-(Except-for-John)']
+		['Im-Going-for-a-Walk', 'Respect-Everybody-(Except-for-John)', 'Your-9-Lives']
+		//['-'] rest in piece dash song you will not be missd
+		//['w2s1','w2s2','w2s3'] add back the comma in week 1 when week 2 here!! OK I WILL 
 	];
 	var curDifficulty:Int = 1;
 
@@ -45,7 +48,8 @@ class StoryMenuState extends MusicBeatState
 		['pico', 'bf', 'gf'],
 		['mom', 'bf', 'gf'],
 		*/
-		['parents-christmas', 'bf', 'gf']
+		['parents-christmas', 'bf', 'gf'],
+		['parents-christmas2', 'bf', 'gf']
 		//['senpai', 'bf', 'gf']
 	];
 

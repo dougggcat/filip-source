@@ -50,4 +50,5 @@
 	<SubTexture name="up press0001" x="609" y="389" width="144" height="141" frameX="-5" frameY="-4" frameWidth="153" frameHeight="150"/>
 	<SubTexture name="up press0002" x="1850" y="308" width="153" height="150"/>
 	<SubTexture name="up press0003" x="1850" y="308" width="153" height="150"/>
+	<SubTexture name="no" x="0" y="0" width="1" height="1" frameX="1" frameY="1" frameWidth="1" frameHeight="1"/>
 </TextureAtlas>

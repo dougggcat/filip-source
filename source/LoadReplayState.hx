@@ -40,6 +40,8 @@ class LoadReplayState extends MusicBeatState
         controlsStrings.sort(Reflect.compare);
 
         addWeek(['Bopeebo', 'Fresh', 'Dadbattle'], 1, ['dad']);
+        addWeek(['Im-Going-for-a-Walk', 'Respect-Everybody-(Except-for-John)', 'Your-9-Lives'], 100, ['filip1']);
+	//addWeek(['w2s1','w2s2','w2s3'], 101, ['filip2']);
         addWeek(['Spookeez', 'South', 'Monster'], 2, ['spooky']);
         addWeek(['Pico', 'Philly', 'Blammed'], 3, ['pico']);
 

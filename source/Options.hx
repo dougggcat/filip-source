@@ -472,7 +472,7 @@ class OffsetMenu extends Option
 	{
 		trace("switch");
 		var poop:String = Highscore.formatSong("Tutorial", 1);
-
+		//help
 		PlayState.SONG = Song.loadFromJson(poop, "Tutorial");
 		PlayState.isStoryMode = false;
 		PlayState.storyDifficulty = 0;

@@ -509,14 +509,29 @@ class PlayState extends MusicBeatState
 				];
 			case 'senpai':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('senpai/senpaiDialogue'));
+
 			case 'roses':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('roses/rosesDialogue'));
+
 			case 'thorns':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('thorns/thornsDialogue'));
+
 			case 'im-going-for-a-walk':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('im-going-for-a-walk/im-going-for-a-walkDialogue'));
+
 			case 'respect-everybody-(except-for-john)':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('respect-everybody-(except-for-john)/respect-everybody-(except-for-john)Dialogue'));
+
+			case 'your-9-lives':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('your-9-lives/your-9-livesDialogue'));
+			case '-':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('your-9-lives/teaser'));
+			case 'w2s1':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('w2s1/w2s1Dialogue'));
+			case 'w2s2':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('w2s2/w2s2Dialogue'));
+			case 'w2s3':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('w2s3/w2s3Dialogue'));
 			
 		}
 
@@ -827,10 +842,14 @@ class PlayState extends MusicBeatState
 								add(waveSpriteFG);
 						*/
 			}
-			default:
+			
+			//FILPO
+
+			
+			case 'Im-Going-for-a-Walk':
 			{
 					defaultCamZoom = 0.9;
-					curStage = 'stage';
+					curStage = 'stage1';
 					var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('stageback'));
 					bg.antialiasing = true;
 					bg.scrollFactor.set(0.9, 0.9);
@@ -853,21 +872,206 @@ class PlayState extends MusicBeatState
 					stageCurtains.active = false;
 
 					add(stageCurtains);
+			}			
+/*
+			case 'Respect-Everybody-(Except-for-John)':
+			{
+					defaultCamZoom = 0.9;
+					curStage = 'stage2';
+					var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('stageback2'));
+					bg.antialiasing = true;
+					bg.scrollFactor.set(0.9, 0.9);
+					bg.active = false;
+					add(bg);
+
+					var stageFront2:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('stagefront2'));
+					stageFront2.setGraphicSize(Std.int(stageFront2.width * 1.1));
+					stageFront2.updateHitbox();
+					stageFront2.antialiasing = true;
+					stageFront2.scrollFactor.set(0.9, 0.9);
+					stageFront2.active = false;
+					add(stageFront2);
+
+					var stageCurtains:FlxSprite = new FlxSprite(-500, -300).loadGraphic(Paths.image('stagecurtains'));
+					stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
+					stageCurtains.updateHitbox();
+					stageCurtains.antialiasing = true;
+					stageCurtains.scrollFactor.set(1.3, 1.3);
+					stageCurtains.active = false;
+
+					add(stageCurtains);
+			}
+			
+			case 'Your-9-Lives':
+			{
+					defaultCamZoom = 0.9;
+					curStage = 'stage';
+					var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('stageback3'));
+					bg.antialiasing = true;
+					bg.scrollFactor.set(0.9, 0.9);
+					bg.active = false;
+					add(bg);
+
+					var stageFront3:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('stagefront3'));
+					stageFront3.setGraphicSize(Std.int(stageFront3.width * 1.1));
+					stageFront3.updateHitbox();
+					stageFront3.antialiasing = true;
+					stageFront3.scrollFactor.set(0.9, 0.9);
+					stageFront3.active = false;
+					add(stageFront3);
+
+					var stageCurtains:FlxSprite = new FlxSprite(-500, -300).loadGraphic(Paths.image('stagecurtains'));
+					stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
+					stageCurtains.updateHitbox();
+					stageCurtains.antialiasing = true;
+					stageCurtains.scrollFactor.set(1.3, 1.3);
+					stageCurtains.active = false;
+
+					add(stageCurtains);
+			}
+			*/
+			//why are the curtains still here im not sure
+			case 'w2s1':
+			{
+					defaultCamZoom = 0.9;
+					curStage = 'stage';
+					var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('stageback4'));
+					bg.antialiasing = true;
+					bg.scrollFactor.set(0.9, 0.9);
+					bg.active = false;
+					add(bg);
+
+					var stageFront4:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('stagefront4'));
+					stageFront4.setGraphicSize(Std.int(stageFront4.width * 1.1));
+					stageFront4.updateHitbox();
+					stageFront4.antialiasing = true;
+					stageFront4.scrollFactor.set(0.9, 0.9);
+					stageFront4.active = false;
+					add(stageFront4);
+
+					var stageCurtains:FlxSprite = new FlxSprite(-500, -300).loadGraphic(Paths.image('stagecurtains'));
+					stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
+					stageCurtains.updateHitbox();
+					stageCurtains.antialiasing = true;
+					stageCurtains.scrollFactor.set(1.3, 1.3);
+					stageCurtains.active = false;
+
+					add(stageCurtains);
+			}
+			
+			case 'w2s2':
+			{
+					defaultCamZoom = 0.9;
+					curStage = 'stage';
+					var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('stageback5'));
+					bg.antialiasing = true;
+					bg.scrollFactor.set(0.9, 0.9);
+					bg.active = false;
+					add(bg);
+
+					var stageFront5:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('stagefront5'));
+					stageFront5.setGraphicSize(Std.int(stageFront5.width * 1.1));
+					stageFront5.updateHitbox();
+					stageFront5.antialiasing = true;
+					stageFront5.scrollFactor.set(0.9, 0.9);
+					stageFront5.active = false;
+					add(stageFront5);
+
+					var stageCurtains:FlxSprite = new FlxSprite(-500, -300).loadGraphic(Paths.image('stagecurtains'));
+					stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
+					stageCurtains.updateHitbox();
+					stageCurtains.antialiasing = true;
+					stageCurtains.scrollFactor.set(1.3, 1.3);
+					stageCurtains.active = false;
+
+					add(stageCurtains);
+			}
+
+			case 'w2s3':
+			{
+					defaultCamZoom = 0.9;
+					curStage = 'stage';
+					var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('stageback6'));
+					bg.antialiasing = true;
+					bg.scrollFactor.set(0.9, 0.9);
+					bg.active = false;
+					add(bg);
+
+					var stageFront6:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('stagefront6'));
+					stageFront6.setGraphicSize(Std.int(stageFront6.width * 1.1));
+					stageFront6.updateHitbox();
+					stageFront6.antialiasing = true;
+					stageFront6.scrollFactor.set(0.9, 0.9);
+					stageFront6.active = false;
+					add(stageFront6);
+
+					var stageCurtains:FlxSprite = new FlxSprite(-500, -300).loadGraphic(Paths.image('stagecurtains'));
+					stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
+					stageCurtains.updateHitbox();
+					stageCurtains.antialiasing = true;
+					stageCurtains.scrollFactor.set(1.3, 1.3);
+					stageCurtains.active = false;
+
+					add(stageCurtains);
+			}
+			case '-':
+			{
+					defaultCamZoom = 300;
+					curStage = 'school';
+					//no
+					var stageCurtains:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('stageCurtains'));
+					stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
+					stageCurtains.updateHitbox();
+					stageCurtains.antialiasing = true;
+					stageCurtains.scrollFactor.set(1.3, 1.3);
+					stageCurtains.active = false;
+
+					add(stageCurtains);
+			}
+			default:
+			{
+					defaultCamZoom = 0.9;
+					curStage = 'stage';
+					var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('stageback'));
+					bg.antialiasing = true;
+					bg.scrollFactor.set(0.9, 0.9);
+					bg.active = false;
+					add(bg);
+
+					var stageFront:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('stagefront'));
+					stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
+					stageFront.updateHitbox();
+					stageFront.antialiasing = true;
+					stageFront.scrollFactor.set(0.9, 0.9);
+					stageFront.active = false;
+					add(stageFront);
+
+					var stageCurtains:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('stageCurtains'));
+					stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
+					stageCurtains.updateHitbox();
+					stageCurtains.antialiasing = true;
+					stageCurtains.scrollFactor.set(1.3, 1.3);
+					stageCurtains.active = false;
+
+					add(stageCurtains);
 			}
 		}
 		var gfVersion:String = 'gf';
 
 		switch (curStage)
 		{
-			case 'limo':
-				gfVersion = 'gf-car';
+			//case 'no-zone':
+			//	gfVersion = 'gf-car';
 			case 'mall' | 'mallEvil':
 				gfVersion = 'gf-christmas';
-			case 'school':
-				gfVersion = 'gf-pixel';
+			//case 'school':
+			//	gfVersion = 'gf-pixel';
 			case 'schoolEvil':
 				gfVersion = 'gf-pixel';
-		}
+			/*case '-':
+				gfVersion = 'blank';
+		*/
+}
 
 		if (curStage == 'limo')
 			gfVersion = 'gf-car';
@@ -1152,6 +1356,19 @@ class PlayState extends MusicBeatState
 					schoolIntro(doof);
 				case 'respect-everybody-(except-for-john)':
 					schoolIntro(doof);
+				case 'your-9-lives':
+					schoolIntro(doof);
+				case '-':
+					schoolIntro(doof);
+					
+				case 'w2s1':
+					schoolIntro(doof);
+				case 'w2s2':
+					schoolIntro(doof);
+				case 'w2s3':
+					schoolIntro(doof);
+				
+			
 				
 				default:
 					startCountdown();
@@ -1173,7 +1390,8 @@ class PlayState extends MusicBeatState
 	}
 
 	function schoolIntro(?dialogueBox:DialogueBox):Void
-	{
+	{	
+
 		var black:FlxSprite = new FlxSprite(-100, -100).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.BLACK);
 		black.scrollFactor.set();
 		add(black);
@@ -1821,7 +2039,7 @@ class PlayState extends MusicBeatState
 
 			switch (curStage)
 			{
-				case 'school' | 'schoolEvil':
+				case 'school' | 'schoolEvil' | 'no-zone':
 					babyArrow.loadGraphic(Paths.image('weeb/pixelUI/arrows-pixels'), true, 17, 17);
 					babyArrow.animation.add('green', [6]);
 					babyArrow.animation.add('red', [7]);
@@ -1854,8 +2072,42 @@ class PlayState extends MusicBeatState
 							babyArrow.animation.add('static', [3]);
 							babyArrow.animation.add('pressed', [7, 11], 12, false);
 							babyArrow.animation.add('confirm', [15, 19], 24, false);
-					}
 
+				/*case 'no-zone':
+					babyArrow.frames = Paths.getSparrowAtlas('NOTE_assets');
+					babyArrow.animation.addByPrefix('green', 'no');
+					babyArrow.animation.addByPrefix('blue', 'no');
+					babyArrow.animation.addByPrefix('purple', 'no');
+					babyArrow.animation.addByPrefix('red', 'no');
+
+					babyArrow.antialiasing = true;
+					babyArrow.setGraphicSize(Std.int(babyArrow.width * 0.7));
+
+					switch (Math.abs(i))
+					{
+						case 0:
+							babyArrow.x += Note.swagWidth * 0;
+							babyArrow.animation.addByPrefix('static', 'no');
+							babyArrow.animation.addByPrefix('pressed', 'no', 24, false);
+							babyArrow.animation.addByPrefix('confirm', 'no', 24, false);
+						case 1:
+							babyArrow.x += Note.swagWidth * 1;
+							babyArrow.animation.addByPrefix('static', 'no');
+							babyArrow.animation.addByPrefix('pressed', 'no', 24, false);
+							babyArrow.animation.addByPrefix('confirm', 'no', 24, false);
+						case 2:
+							babyArrow.x += Note.swagWidth * 2;
+							babyArrow.animation.addByPrefix('static', 'no');
+							babyArrow.animation.addByPrefix('pressed', 'no', 24, false);
+							babyArrow.animation.addByPrefix('confirm', 'no', 24, false);
+						case 3:
+							babyArrow.x += Note.swagWidth * 3;
+							babyArrow.animation.addByPrefix('static', 'no');
+							babyArrow.animation.addByPrefix('pressed', 'no', 24, false);
+							babyArrow.animation.addByPrefix('confirm', 'no', 24, false);
+					}}//hi why are you looking at the ARROWS
+					*/
+					}
 				default:
 					babyArrow.frames = Paths.getSparrowAtlas('NOTE_assets');
 					babyArrow.animation.addByPrefix('green', 'arrowUP');
@@ -2689,6 +2941,14 @@ class PlayState extends MusicBeatState
 
 				if (storyPlaylist.length <= 0)
 				{
+			/*		if SONG.song.toLowerCase("your-9-lives")	
+					{
+						var poop:String = Highscore.formatSong("Tutorial", 1);
+		//help
+						PlayState.SONG = Song.loadFromJson(poop, "Tutorial");
+					}
+			else
+				{ */ // i do not know how to FREA*******KING !!!code
 					FlxG.sound.playMusic(Paths.music('freakyMenu'));
 
 					transIn = FlxTransitionableState.defaultTransIn;
@@ -2747,6 +3007,7 @@ class PlayState extends MusicBeatState
 
 					LoadingState.loadAndSwitchState(new PlayState());
 				}
+				
 			}
 			else
 			{

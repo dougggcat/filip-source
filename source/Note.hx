@@ -60,6 +60,28 @@ class Note extends FlxSprite
 
 		switch (daStage)
 		{
+			case 'no-zone':
+				frames = Paths.getSparrowAtlas('NOTE_assets');
+
+				animation.addByPrefix('greenScroll', 'no');
+				animation.addByPrefix('redScroll', 'no');
+				animation.addByPrefix('blueScroll', 'no');
+				animation.addByPrefix('purpleScroll', 'no');
+
+				animation.addByPrefix('purpleholdend', 'no');
+				animation.addByPrefix('greenholdend', 'no');
+				animation.addByPrefix('redholdend', 'no');
+				animation.addByPrefix('blueholdend', 'no');
+
+				animation.addByPrefix('purplehold', 'no');
+				animation.addByPrefix('greenhold', 'no');
+				animation.addByPrefix('redhold', 'no');
+				animation.addByPrefix('bluehold', 'no');
+
+				setGraphicSize(Std.int(width * 0.7));
+				updateHitbox();
+				antialiasing = true;
+				
 			case 'school' | 'schoolEvil':
 				loadGraphic(Paths.image('weeb/pixelUI/arrows-pixels'), true, 17, 17);
 

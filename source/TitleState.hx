@@ -312,11 +312,10 @@ class TitleState extends MusicBeatState
 
 				http.onData = function (data:String) {
 				  
-				  	if (!MainMenuState.kadeEngineVer.contains(data.trim()) && !OutdatedSubState.leftState && MainMenuState.nightly == "")
+				//  	if (!MainMenuState.kadeEngineVer.contains(data.trim()) && !OutdatedSubState.leftState && MainMenuState.nightly == "")
+				if (!MainMenuState.kadeEngineVer.contains(data.trim()) && MainMenuState.nightly == "")
 					{
-						trace('outdated lmao! ' + data.trim() + ' != ' + MainMenuState.kadeEngineVer);
-						OutdatedSubState.needVer = data;
-						FlxG.switchState(new OutdatedSubState());
+						FlxG.switchState(new MainMenuState());
 					}
 					else
 					{
@@ -404,6 +403,7 @@ class TitleState extends MusicBeatState
 			case 5:
 				if (Main.watermarks)
 					createCoolText(['Mod by JOSSZZOL', 'Music by JAC K', 'Scripting by DOUGGG']);
+			//i will admit that it's not GOOD scripting but uhh
 			//	else
 			//		createCoolText(['In Partnership', 'with']);
 			case 7:

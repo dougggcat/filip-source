@@ -121,7 +121,7 @@ class Character extends FlxSprite
 				setGraphicSize(Std.int(width * PlayState.daPixelZoom));
 				updateHitbox();
 				antialiasing = false;
-
+///////////////////////////
 			case 'filip':
 				// DAD ANIMATION LOADING CODE
 				tex = Paths.getSparrowAtlas('filip','shared');
@@ -139,6 +139,68 @@ class Character extends FlxSprite
 				addOffset('singDOWN');
 
 				playAnim('idle');
+			
+			case 'filip2':
+				// DAD ANIMATION LOADING CODE 
+				tex = Paths.getSparrowAtlas('filip2','shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'fil idle', 24);
+				animation.addByPrefix('singUP', 'fil UP', 24);
+				animation.addByPrefix('singRIGHT', 'fil RIGHT', 24);
+				animation.addByPrefix('singDOWN', 'fil DOWN', 24);
+				animation.addByPrefix('singLEFT', 'fil LEFT', 24);
+
+				addOffset('idle');
+				addOffset('singUP');
+				addOffset('singRIGHT');
+				addOffset('singLEFT');
+				addOffset('singDOWN');
+
+				playAnim('idle');
+			case 'blank':
+				tex = Paths.getSparrowAtlas('filip','shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'no', 24);
+				animation.addByPrefix('singUP', 'no', 24);
+				animation.addByPrefix('singRIGHT', 'no', 24);
+				animation.addByPrefix('singDOWN', 'no', 24);
+				animation.addByPrefix('singLEFT', 'no', 24);
+			/*gf
+				animation.addByPrefix('cheer', 'no', 24, false);
+				animation.addByPrefix('singLEFT', 'no', 24, false);
+				animation.addByPrefix('singRIGHT', 'no', 24, false);
+				animation.addByPrefix('singUP', 'no', 24, false);
+				animation.addByPrefix('singDOWN', 'no', 24, false);
+				animation.addByIndices('sad', 'no', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], "", 24, false);
+				animation.addByIndices('danceLeft', 'no', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
+				animation.addByIndices('danceRight', 'no', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
+				animation.addByIndices('hairBlow', "no", [0, 1, 2, 3], "", 24);
+				animation.addByIndices('hairFall', "no", [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], "", 24, false);
+				animation.addByPrefix('scared', 'no', 24);
+
+				addOffset('cheer');
+				addOffset('sad', -2, -2);
+				addOffset('danceLeft', 0, -9);
+				addOffset('danceRight', 0, -9);
+
+				addOffset("singUP", 0, 4);
+				addOffset("singRIGHT", 0, -20);
+				addOffset("singLEFT", 0, -19);
+				addOffset("singDOWN", 0, -20);
+				addOffset('hairBlow', 45, -8);
+				addOffset('hairFall', 0, -9);
+
+				addOffset('scared', -2, -17);
+
+				playAnim('danceRight');
+			*/
+				addOffset('idle');
+				addOffset('singUP');
+				addOffset('singRIGHT');
+				addOffset('singLEFT');
+				addOffset('singDOWN');
+
+////////////////////			////////////////////////
 			case 'spooky':
 				tex = Paths.getSparrowAtlas('spooky_kids_assets');
 				frames = tex;
