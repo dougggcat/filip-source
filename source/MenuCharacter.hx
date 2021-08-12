@@ -29,7 +29,7 @@ class MenuCharacter extends FlxSprite
 		'pico' => new CharacterSetting(0, 0, 1.0, true),
 		'mom' => new CharacterSetting(-30, 140, 0.85),
 		'parents-christmas' => new CharacterSetting(100, 130, 1.8),
-		'parents-christmas2' => new CharacterSetting(100, 130, 1.8),
+		'parents-christma2' => new CharacterSetting(100, 130, 1.8),
 		'senpai' => new CharacterSetting(-40, -45, 1.4)
 	];
 
@@ -52,7 +52,7 @@ class MenuCharacter extends FlxSprite
 		animation.addByPrefix('pico', "Pico Idle Dance", 24);
 		animation.addByPrefix('mom', "Mom Idle BLACK LINES", 24);
 		animation.addByPrefix('parents-christmas', "Parent Christmas Idle", 24);
-		animation.addByPrefix('parents-christmas2', "Parent Christmas Idle2", 24);
+		animation.addByPrefix('parents-christma2', "Parent Christmas Idl2", 24);
 		animation.addByPrefix('senpai', "SENPAI idle Black Lines", 24);
 
 		setGraphicSize(Std.int(width * scale));

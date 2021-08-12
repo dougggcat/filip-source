@@ -120,20 +120,20 @@
 	
 	
 	<!-- 2-->
-	<SubTexture name="Parent Christmas Idle2 Black Lines0000" x="0" y="4304" width="785" height="677" frameX="0" frameY="0" frameWidth="555" frameHeight="1040"/>
-	<SubTexture name="Parent Christmas Idle2 Black Lines0001" x="0" y="2304" width="785" height="677" frameX="0" frameY="0" frameWidth="555" frameHeight="1040"/>
-	<SubTexture name="Parent Christmas Idle2 Black Lines0002" x="785" y="2304" width="785" height="677" frameX="0" frameY="0" frameWidth="555" frameHeight="1040"/>
-	<SubTexture name="Parent Christmas Idle2 Black Lines0003" x="785" y="2304" width="785" height="677" frameX="0" frameY="0" frameWidth="555" frameHeight="1040"/>
-	<SubTexture name="Parent Christmas Idle2 Black Lines0004" x="1570" y="2304" width="785" height="677" frameX="0" frameY="0" frameWidth="555" frameHeight="1040"/>
-	<SubTexture name="Parent Christmas Idle2 Black Lines0005" x="1570" y="2304" width="785" height="677" frameX="0" frameY="0" frameWidth="555" frameHeight="1040"/>
-	<SubTexture name="Parent Christmas Idle2 Black Lines0006" x="2355" y="2304" width="785" height="677" frameX="0" frameY="0" frameWidth="555" frameHeight="1040"/>
-	<SubTexture name="Parent Christmas Idle2 Black Lines0007" x="2355" y="2304" width="785" height="677" frameX="0" frameY="0" frameWidth="555" frameHeight="1040"/>
-	<SubTexture name="Parent Christmas Idle2 Black Lines0008" x="3140" y="2304" width="785" height="677" frameX="0" frameY="0" frameWidth="555" frameHeight="1040"/>
-	<SubTexture name="Parent Christmas Idle2 Black Lines0009" x="3140" y="2304" width="785" height="677" frameX="0" frameY="0" frameWidth="555" frameHeight="1040"/>
-	<SubTexture name="Parent Christmas Idle2 Black Lines0010" x="3925" y="2304" width="785" height="677" frameX="0" frameY="0" frameWidth="555" frameHeight="1040"/>
-	<SubTexture name="Parent Christmas Idle2 Black Lines0011" x="3925" y="2304" width="785" height="677" frameX="0" frameY="0" frameWidth="555" frameHeight="1040"/>
-	<SubTexture name="Parent Christmas Idle2 Black Lines0012" x="3925" y="2304" width="785" height="677" frameX="0" frameY="0" frameWidth="555" frameHeight="1040"/>
-	<SubTexture name="Parent Christmas Idle2 Black Lines0013" x="3925" y="2304" width="785" height="677" frameX="0" frameY="0" frameWidth="555" frameHeight="1040"/>
+	<SubTexture name="Parent Christmas Idl2 Black Lines0000" x="0" y="4304" width="785" height="677" frameX="0" frameY="0" frameWidth="555" frameHeight="1040"/>
+	<SubTexture name="Parent Christmas Idl2 Black Lines0001" x="0" y="4304" width="785" height="677" frameX="0" frameY="0" frameWidth="555" frameHeight="1040"/>
+	<SubTexture name="Parent Christmas Idl2 Black Lines0002" x="785" y="4304" width="785" height="677" frameX="0" frameY="0" frameWidth="555" frameHeight="1040"/>
+	<SubTexture name="Parent Christmas Idl2 Black Lines0003" x="785" y="4304" width="785" height="677" frameX="0" frameY="0" frameWidth="555" frameHeight="1040"/>
+	<SubTexture name="Parent Christmas Idl2 Black Lines0004" x="1570" y="4304" width="785" height="677" frameX="0" frameY="0" frameWidth="555" frameHeight="1040"/>
+	<SubTexture name="Parent Christmas Idl2 Black Lines0005" x="1570" y="4304" width="785" height="677" frameX="0" frameY="0" frameWidth="555" frameHeight="1040"/>
+	<SubTexture name="Parent Christmas Idl2 Black Lines0006" x="2355" y="4304" width="785" height="677" frameX="0" frameY="0" frameWidth="555" frameHeight="1040"/>
+	<SubTexture name="Parent Christmas Idl2 Black Lines0007" x="2355" y="4304" width="785" height="677" frameX="0" frameY="0" frameWidth="555" frameHeight="1040"/>
+	<SubTexture name="Parent Christmas Idl2 Black Lines0008" x="3140" y="4304" width="785" height="677" frameX="0" frameY="0" frameWidth="555" frameHeight="1040"/>
+	<SubTexture name="Parent Christmas Idl2 Black Lines0009" x="3140" y="4304" width="785" height="677" frameX="0" frameY="0" frameWidth="555" frameHeight="1040"/>
+	<SubTexture name="Parent Christmas Idl2 Black Lines0010" x="3925" y="4304" width="785" height="677" frameX="0" frameY="0" frameWidth="555" frameHeight="1040"/>
+	<SubTexture name="Parent Christmas Idl2 Black Lines0011" x="3925" y="4304" width="785" height="677" frameX="0" frameY="0" frameWidth="555" frameHeight="1040"/>
+	<SubTexture name="Parent Christmas Idl2 Black Lines0012" x="3925" y="4304" width="785" height="677" frameX="0" frameY="0" frameWidth="555" frameHeight="1040"/>
+	<SubTexture name="Parent Christmas Idl2 Black Lines0013" x="3925" y="4304" width="785" height="677" frameX="0" frameY="0" frameWidth="555" frameHeight="1040"/>
 
 
 	<SubTexture name="Pico Idle Dance0000" x="4399" y="2274" width="435" height="461" frameX="-18" frameY="-13" frameWidth="453" frameHeight="475"/>

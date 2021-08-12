@@ -526,12 +526,13 @@ class PlayState extends MusicBeatState
 				dialogue = CoolUtil.coolTextFile(Paths.txt('your-9-lives/your-9-livesDialogue'));
 			case '-':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('your-9-lives/teaser'));
-			case 'w2s1':
-				dialogue = CoolUtil.coolTextFile(Paths.txt('w2s1/w2s1Dialogue'));
-			case 'w2s2':
-				dialogue = CoolUtil.coolTextFile(Paths.txt('w2s2/w2s2Dialogue'));
-			case 'w2s3':
-				dialogue = CoolUtil.coolTextFile(Paths.txt('w2s3/w2s3Dialogue'));
+			//LOWERCASE
+			case 'big-chance!!':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('big-chance!!/big-chance!!Dialogue'));
+			case 'say-my-name,-elyse':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('say-my-name,-elyse/say-my-name,-elyseDialogue'));
+			case 'top-`-countertop':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('top-`-countertop/top-`-countertopDialogue'));
 			
 		}
 
@@ -878,19 +879,19 @@ class PlayState extends MusicBeatState
 			{
 					defaultCamZoom = 0.9;
 					curStage = 'stage2';
-					var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('stageback2'));
+					var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('stageback'));
 					bg.antialiasing = true;
 					bg.scrollFactor.set(0.9, 0.9);
 					bg.active = false;
 					add(bg);
 
-					var stageFront2:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('stagefront2'));
-					stageFront2.setGraphicSize(Std.int(stageFront2.width * 1.1));
-					stageFront2.updateHitbox();
-					stageFront2.antialiasing = true;
-					stageFront2.scrollFactor.set(0.9, 0.9);
-					stageFront2.active = false;
-					add(stageFront2);
+					var stageFront:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('stagefront'));
+					stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
+					stageFront.updateHitbox();
+					stageFront.antialiasing = true;
+					stageFront.scrollFactor.set(0.9, 0.9);
+					stageFront.active = false;
+					add(stageFront);
 
 					var stageCurtains:FlxSprite = new FlxSprite(-500, -300).loadGraphic(Paths.image('stagecurtains'));
 					stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
@@ -905,20 +906,20 @@ class PlayState extends MusicBeatState
 			case 'Your-9-Lives':
 			{
 					defaultCamZoom = 0.9;
-					curStage = 'stage';
-					var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('stageback3'));
+					curStage = 'stage3';
+					var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('stageback'));
 					bg.antialiasing = true;
 					bg.scrollFactor.set(0.9, 0.9);
 					bg.active = false;
 					add(bg);
 
-					var stageFront3:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('stagefront3'));
-					stageFront3.setGraphicSize(Std.int(stageFront3.width * 1.1));
-					stageFront3.updateHitbox();
-					stageFront3.antialiasing = true;
-					stageFront3.scrollFactor.set(0.9, 0.9);
-					stageFront3.active = false;
-					add(stageFront3);
+					var stageFront3:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('stagefront'));
+					stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
+					stageFront.updateHitbox();
+					stageFront.antialiasing = true;
+					stageFront.scrollFactor.set(0.9, 0.9);
+					stageFront.active = false;
+					add(stageFront);
 
 					var stageCurtains:FlxSprite = new FlxSprite(-500, -300).loadGraphic(Paths.image('stagecurtains'));
 					stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
@@ -931,23 +932,26 @@ class PlayState extends MusicBeatState
 			}
 			*/
 			//why are the curtains still here im not sure
-			case 'w2s1':
+			//CAPITAL
+
+			//YEAH GUESS WHAT ITS NOT SUPPOSED TO BE CAPITAL I DONT KNOW WHY IT WAS LIKE THAT ON WEEK 1
+			case "big-chance!!":
 			{
 					defaultCamZoom = 0.9;
-					curStage = 'stage';
-					var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('stageback4'));
-					bg.antialiasing = true;
-					bg.scrollFactor.set(0.9, 0.9);
-					bg.active = false;
-					add(bg);
+					curStage = 'stage4';
+					var bg4:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('its4'));
+					bg4.antialiasing = true;
+					bg4.scrollFactor.set(0.9, 0.9);
+					bg4.active = false;
+					add(bg4);
 
-					var stageFront4:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('stagefront4'));
-					stageFront4.setGraphicSize(Std.int(stageFront4.width * 1.1));
-					stageFront4.updateHitbox();
-					stageFront4.antialiasing = true;
-					stageFront4.scrollFactor.set(0.9, 0.9);
-					stageFront4.active = false;
-					add(stageFront4);
+					var sf4:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('stagefront4'));
+					sf4.setGraphicSize(Std.int(sf4.width * 1.1));
+					sf4.updateHitbox();
+					sf4.antialiasing = true;
+					sf4.scrollFactor.set(0.9, 0.9);
+					sf4.active = false;
+					add(sf4);
 
 					var stageCurtains:FlxSprite = new FlxSprite(-500, -300).loadGraphic(Paths.image('stagecurtains'));
 					stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
@@ -959,23 +963,23 @@ class PlayState extends MusicBeatState
 					add(stageCurtains);
 			}
 			
-			case 'w2s2':
+			case 'say-my-name,-elyse':
 			{
 					defaultCamZoom = 0.9;
-					curStage = 'stage';
-					var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('stageback5'));
-					bg.antialiasing = true;
-					bg.scrollFactor.set(0.9, 0.9);
-					bg.active = false;
-					add(bg);
+					curStage = 'stage5';
+					var bg5:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('its5'));
+					bg5.antialiasing = true;
+					bg5.scrollFactor.set(0.9, 0.9);
+					bg5.active = false;
+					add(bg5);
 
-					var stageFront5:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('stagefront5'));
-					stageFront5.setGraphicSize(Std.int(stageFront5.width * 1.1));
-					stageFront5.updateHitbox();
-					stageFront5.antialiasing = true;
-					stageFront5.scrollFactor.set(0.9, 0.9);
-					stageFront5.active = false;
-					add(stageFront5);
+					var sf4:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('stagefront4'));
+					sf4.setGraphicSize(Std.int(sf4.width * 1.1));
+					sf4.updateHitbox();
+					sf4.antialiasing = true;
+					sf4.scrollFactor.set(0.9, 0.9);
+					sf4.active = false;
+					add(sf4);
 
 					var stageCurtains:FlxSprite = new FlxSprite(-500, -300).loadGraphic(Paths.image('stagecurtains'));
 					stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
@@ -987,23 +991,23 @@ class PlayState extends MusicBeatState
 					add(stageCurtains);
 			}
 
-			case 'w2s3':
+			case 'top-`-countertop':
 			{
 					defaultCamZoom = 0.9;
-					curStage = 'stage';
-					var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('stageback6'));
-					bg.antialiasing = true;
-					bg.scrollFactor.set(0.9, 0.9);
-					bg.active = false;
-					add(bg);
+					curStage = 'stage6';
+					var bg6:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('its6'));
+					bg6.antialiasing = true;
+					bg6.scrollFactor.set(0.9, 0.9);
+					bg6.active = false;
+					add(bg6);
 
-					var stageFront6:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('stagefront6'));
-					stageFront6.setGraphicSize(Std.int(stageFront6.width * 1.1));
-					stageFront6.updateHitbox();
-					stageFront6.antialiasing = true;
-					stageFront6.scrollFactor.set(0.9, 0.9);
-					stageFront6.active = false;
-					add(stageFront6);
+					var sf4:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('stagefront4'));
+					sf4.setGraphicSize(Std.int(sf4.width * 1.1));
+					sf4.updateHitbox();
+					sf4.antialiasing = true;
+					sf4.scrollFactor.set(0.9, 0.9);
+					sf4.active = false;
+					add(sf4);
 
 					var stageCurtains:FlxSprite = new FlxSprite(-500, -300).loadGraphic(Paths.image('stagecurtains'));
 					stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
@@ -1014,7 +1018,7 @@ class PlayState extends MusicBeatState
 
 					add(stageCurtains);
 			}
-			case '-':
+			/*case '-':
 			{
 					defaultCamZoom = 300;
 					curStage = 'school';
@@ -1028,10 +1032,11 @@ class PlayState extends MusicBeatState
 
 					add(stageCurtains);
 			}
+				*/
 			default:
 			{
 					defaultCamZoom = 0.9;
-					curStage = 'stage';
+					curStage = 'stage0';
 					var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('stageback'));
 					bg.antialiasing = true;
 					bg.scrollFactor.set(0.9, 0.9);
@@ -1064,8 +1069,8 @@ class PlayState extends MusicBeatState
 			//	gfVersion = 'gf-car';
 			case 'mall' | 'mallEvil':
 				gfVersion = 'gf-christmas';
-			//case 'school':
-			//	gfVersion = 'gf-pixel';
+			case 'school':
+				gfVersion = 'gf-pixel';	
 			case 'schoolEvil':
 				gfVersion = 'gf-pixel';
 			/*case '-':
@@ -1235,7 +1240,7 @@ class PlayState extends MusicBeatState
 				var songName = new FlxText(songPosBG.x + (songPosBG.width / 2) - 20,songPosBG.y,0,SONG.song, 16);
 				if (FlxG.save.data.downscroll)
 					songName.y -= 3;
-				songName.setFormat(Paths.font("vcr2.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
+				songName.setFormat(Paths.font("vcr3.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 				songName.scrollFactor.set();
 				add(songName);
 				songName.cameras = [camHUD];
@@ -1257,7 +1262,7 @@ class PlayState extends MusicBeatState
 
 		// Add Kade Engine watermark
 		kadeEngineWatermark = new FlxText(4,healthBarBG.y + 50,0,SONG.song + " " + (storyDifficulty == 2 ? "But Fast" : storyDifficulty == 1 ? "Normal" : "Easy") + (Main.watermarks ? " - KE " + MainMenuState.kadeEngineVer : ""), 16);
-		kadeEngineWatermark.setFormat(Paths.font("vcr2.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
+		kadeEngineWatermark.setFormat(Paths.font("vcr3.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 		kadeEngineWatermark.scrollFactor.set();
 		add(kadeEngineWatermark);
 
@@ -1267,14 +1272,14 @@ class PlayState extends MusicBeatState
 		scoreTxt = new FlxText(FlxG.width / 2 - 235, healthBarBG.y + 50, 0, "", 20);
 		if (!FlxG.save.data.accuracyDisplay)
 			scoreTxt.x = healthBarBG.x + healthBarBG.width / 2;
-		scoreTxt.setFormat(Paths.font("vcr2.ttf"), 16, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
+		scoreTxt.setFormat(Paths.font("vcr3.ttf"), 16, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 		scoreTxt.scrollFactor.set();
 		if (offsetTesting)
 			scoreTxt.x += 300;
 		add(scoreTxt);
 
 		replayTxt = new FlxText(healthBarBG.x + healthBarBG.width / 2 - 75, healthBarBG.y + (FlxG.save.data.downscroll ? 100 : -100), 0, "REPLAY", 20);
-		replayTxt.setFormat(Paths.font("vcr2.ttf"), 42, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
+		replayTxt.setFormat(Paths.font("vcr3.ttf"), 42, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 		replayTxt.scrollFactor.set();
 		if (loadRep)
 			{
@@ -1360,12 +1365,12 @@ class PlayState extends MusicBeatState
 					schoolIntro(doof);
 				case '-':
 					schoolIntro(doof);
-					
-				case 'w2s1':
+					//LOWER
+				case 'big-chance!!':
 					schoolIntro(doof);
-				case 'w2s2':
+				case 'say-my-name,-elyse':
 					schoolIntro(doof);
-				case 'w2s3':
+				case 'top-`-countertop':
 					schoolIntro(doof);
 				
 			
@@ -1884,7 +1889,7 @@ class PlayState extends MusicBeatState
 			var songName = new FlxText(songPosBG.x + (songPosBG.width / 2) - 20,songPosBG.y,0,SONG.song, 16);
 			if (FlxG.save.data.downscroll)
 				songName.y -= 3;
-			songName.setFormat(Paths.font("vcr2.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
+			songName.setFormat(Paths.font("vcr3.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 			songName.scrollFactor.set();
 			add(songName);
 

@@ -41,7 +41,7 @@ class LoadReplayState extends MusicBeatState
 
         addWeek(['Bopeebo', 'Fresh', 'Dadbattle'], 1, ['dad']);
         addWeek(['Im-Going-for-a-Walk', 'Respect-Everybody-(Except-for-John)', 'Your-9-Lives'], 100, ['filip1']);
-	//addWeek(['w2s1','w2s2','w2s3'], 101, ['filip2']);
+	addWeek(['BIG-CHANCE!!','Say-my-Name,-Elyse','Top-`-Countertop'], 101, ['filip2']);
         addWeek(['Spookeez', 'South', 'Monster'], 2, ['spooky']);
         addWeek(['Pico', 'Philly', 'Blammed'], 3, ['pico']);
 
@@ -84,13 +84,13 @@ class LoadReplayState extends MusicBeatState
 
 		versionShit = new FlxText(5, FlxG.height - 34, 0, "Replay Loader (ESCAPE TO GO BACK)\nNOTICE!!!! Replays are in a beta stage, and they are probably not 100% correct. expect misses and other stuff that isn't there!", 12);
 		versionShit.scrollFactor.set();
-		versionShit.setFormat("VCR OSD M1no", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		versionShit.setFormat("VCR OSD M2no", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
 
 		
 		poggerDetails = new FlxText(5, 34, 0, "Replay Details - \nnone", 12);
 		poggerDetails.scrollFactor.set();
-		poggerDetails.setFormat("VCR OSD M1no", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		poggerDetails.setFormat("VCR OSD M2no", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(poggerDetails);
 
 		changeSelection(0);

@@ -24,18 +24,21 @@ class StoryMenuState extends MusicBeatState
 	var scoreText:FlxText;
 
 	var weekData:Array<Dynamic> = [
-		/*['Tutorial'],*/
-		//['Bopeebo', 'Fresh', 'Dadbattle'],
-		/*
+		/*['Tutorial'],
+		['Bopeebo', 'Fresh', 'Dadbattle'],
 		['Spookeez', 'South', "Monster"],
 		['Pico', 'Philly', "Blammed"],
 		['Satin-Panties', "High", "Milf"],
 		['Cocoa', 'Eggnog', 'Winter-Horrorland'],
 		['Senpai', 'Roses', 'Thorns']
 		*/
-		['Im-Going-for-a-Walk', 'Respect-Everybody-(Except-for-John)', 'Your-9-Lives']
+		['Im-Going-for-a-Walk', 'Respect-Everybody-(Except-for-John)', 'Your-9-Lives'],
 		//['-'] rest in piece dash song you will not be missd
-		//['w2s1','w2s2','w2s3'] add back the comma in week 1 when week 2 here!! OK I WILL 
+		//['Your-Nine-Lives/stuff'], ah cool
+		['BIG-CHANCE!!','Say-my-Name,-Elyse','Top-`-Countertop']
+		//['`','¥','Å','Œ'] 
+
+		//add back the comma in week 1 when week 2 here!! OK I WILL what do you mean will it's already like that 
 	];
 	var curDifficulty:Int = 1;
 
@@ -49,8 +52,8 @@ class StoryMenuState extends MusicBeatState
 		['mom', 'bf', 'gf'],
 		*/
 		['parents-christmas', 'bf', 'gf'],
-		['parents-christmas2', 'bf', 'gf']
-		//['senpai', 'bf', 'gf']
+		['parents-christma2', 'bf', 'gf'],
+		['senpai', 'bf', 'gf']
 	];
 
 	var weekNames:Array<String> = [
@@ -62,7 +65,8 @@ class StoryMenuState extends MusicBeatState
 		"RED SNOW",
 		"Hating Simulator ft. Moawling"
 		*/
-		"Pick it up!!!"
+		"Pick it up!!!",
+		"Hep! Hep! Hep! Hep!"
 	];
 
 	var txtWeekTitle:FlxText;
@@ -100,15 +104,15 @@ class StoryMenuState extends MusicBeatState
 		persistentUpdate = persistentDraw = true;
 
 		scoreText = new FlxText(10, 10, 0, "SCORE: 49324858", 36);
-		scoreText.setFormat("VCR OSD M1no", 32);
+		scoreText.setFormat("VCR OSD M2no", 32);
 
 		txtWeekTitle = new FlxText(FlxG.width * 0.7, 10, 0, "", 32);
-		txtWeekTitle.setFormat("VCR OSD M1no", 32, FlxColor.WHITE, RIGHT);
+		txtWeekTitle.setFormat("VCR OSD M2no", 32, FlxColor.WHITE, RIGHT);
 		txtWeekTitle.alpha = 0.7;
 
 		var rankText:FlxText = new FlxText(0, 10);
 		rankText.text = 'RANK: GREAT';
-		rankText.setFormat(Paths.font("vcr2.ttf"), 32);
+		rankText.setFormat(Paths.font("vcr3.ttf"), 32);
 		rankText.size = scoreText.size;
 		rankText.screenCenter(X);
 
@@ -210,7 +214,7 @@ class StoryMenuState extends MusicBeatState
 
 	override function update(elapsed:Float)
 	{
-		// scoreText.setFormat('VCR OSD M1no', 32);
+		// scoreText.setFormat('VCR OSD M2no', 32);
 		lerpScore = Math.floor(FlxMath.lerp(lerpScore, intendedScore, 0.5));
 
 		scoreText.text = "WEEK SCORE:" + lerpScore;

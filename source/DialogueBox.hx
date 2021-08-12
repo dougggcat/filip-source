@@ -94,26 +94,28 @@ class DialogueBox extends FlxSpriteGroup
 				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
 				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////week2
-			/* yknow i should just make it default to doing this
-			case 'w2s1':
+
+
+////////////////////////////////////////////////////////////////////week2 LOWERCASE
+		//	 yknow i should just make it default to doing this
+			case 'big-chance!!':
 				hasDialog = true;
 				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
 				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
 				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
 
-			case 'w2s2':
+			case 'say-my-name,-elyse':
 				hasDialog = true;
 				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
 				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
 				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
 
-			case 'w2s3':
+			case 'top-`-countertop':
 				hasDialog = true;
 				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
 				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
 				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
-			*/
+			
 
 			case 'roses':
 				hasDialog = true;

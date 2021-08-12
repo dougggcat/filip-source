@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="filips2Portrait.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Filip20000" x="477" y="129" width="500" height="257" frameX="275" frameY="-175" frameWidth="500" frameHeight="257"/>
+	<SubTexture name="Filip20001" x="477" y="129" width="500" height="257" frameX="275" frameY="-175" frameWidth="500" frameHeight="257"/>
+	<SubTexture name="Filip20002" x="477" y="129" width="500" height="257" frameX="275" frameY="-175" frameWidth="500" frameHeight="257"/>
+	<SubTexture name="Filip20003" x="1077" y="129" width="500" height="257" frameX="275" frameY="-175" frameWidth="500" frameHeight="257"/>
+	<SubTexture name="Filip20004" x="1077" y="129" width="500" height="257" frameX="275" frameY="-175" frameWidth="500" frameHeight="257"/>
+	<SubTexture name="Filip20005" x="1077" y="129" width="500" height="257" frameX="275" frameY="-175" frameWidth="500" frameHeight="257"/>
+	<SubTexture name="Filip20006" x="477" y="429" width="500" height="257" frameX="275" frameY="-175" frameWidth="500" frameHeight="257"/>
+	<SubTexture name="Filip20007" x="477" y="429" width="500" height="257" frameX="275" frameY="-175" frameWidth="500" frameHeight="257"/>
+	<SubTexture name="Filip20008" x="477" y="429" width="500" height="257" frameX="275" frameY="-175" frameWidth="500" frameHeight="257"/>
+	<SubTexture name="Filip20009" x="1077" y="429" width="500" height="257" frameX="275" frameY="-175" frameWidth="500" frameHeight="257"/>
+	<SubTexture name="Filip20010" x="1077" y="429" width="500" height="257" frameX="275" frameY="-175" frameWidth="500" frameHeight="257"/>
+	<SubTexture name="Filip20011" x="1077" y="429" width="500" height="257" frameX="275" frameY="-175" frameWidth="500" frameHeight="257"/>
+	<SubTexture name="Filip20012" x="1077" y="429" width="500" height="257" frameX="275" frameY="-175" frameWidth="500" frameHeight="257"/>
+</TextureAtlas>
